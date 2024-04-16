@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'primeScripts'
 description 'NativeUI Reloaded Playermenu/Personalmenu with handcuffs, business, vehiclemenu and inventory. join discord: https://dsc.gg/primeScripts'
-version '1.0.2'
+version '1.1.0'
 
 lua54 'yes'
 
@@ -14,13 +14,7 @@ client_scripts {
 }
 
 server_scripts {
-    '@mysql-async/lib/MySQL.lua',
+    '@oxmysql/lib/MySQL.lua',
     'config.lua',
-    'server.lua',
-}
-
-escrow_ignore {
-    'config.lua',
-    'client.lua',
     'server.lua',
 }
